@@ -1,0 +1,499 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D4146150194CE1EB00402C4F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D414614F194CE1EB00402C4F /* Cocoa.framework */; };
+		D414615A194CE1EB00402C4F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D4146158194CE1EB00402C4F /* InfoPlist.strings */; };
+		D414615C194CE1EB00402C4F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D414615B194CE1EB00402C4F /* main.m */; };
+		D4146160194CE1EB00402C4F /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = D414615E194CE1EB00402C4F /* Credits.rtf */; };
+		D4146163194CE1EB00402C4F /* TTDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4146162194CE1EB00402C4F /* TTDAppDelegate.m */; };
+		D4146166194CE1EB00402C4F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4146164194CE1EB00402C4F /* MainMenu.xib */; };
+		D4146169194CE1EB00402C4F /* TenTimesDo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D4146167194CE1EB00402C4F /* TenTimesDo.xcdatamodeld */; };
+		D414616B194CE1EB00402C4F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D414616A194CE1EB00402C4F /* Images.xcassets */; };
+		D4146172194CE1EB00402C4F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4146171194CE1EB00402C4F /* XCTest.framework */; };
+		D4146173194CE1EB00402C4F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D414614F194CE1EB00402C4F /* Cocoa.framework */; };
+		D414617B194CE1EB00402C4F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D4146179194CE1EB00402C4F /* InfoPlist.strings */; };
+		D414617D194CE1EB00402C4F /* TenTimesDoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D414617C194CE1EB00402C4F /* TenTimesDoTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D4146174194CE1EB00402C4F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4146144194CE1EB00402C4F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D414614B194CE1EB00402C4F;
+			remoteInfo = TenTimesDo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D414614C194CE1EB00402C4F /* TenTimesDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TenTimesDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D414614F194CE1EB00402C4F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		D4146152194CE1EB00402C4F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		D4146153194CE1EB00402C4F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		D4146154194CE1EB00402C4F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D4146157194CE1EB00402C4F /* TenTimesDo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TenTimesDo-Info.plist"; sourceTree = "<group>"; };
+		D4146159194CE1EB00402C4F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D414615B194CE1EB00402C4F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D414615D194CE1EB00402C4F /* TenTimesDo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TenTimesDo-Prefix.pch"; sourceTree = "<group>"; };
+		D414615F194CE1EB00402C4F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		D4146161194CE1EB00402C4F /* TTDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTDAppDelegate.h; sourceTree = "<group>"; };
+		D4146162194CE1EB00402C4F /* TTDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTDAppDelegate.m; sourceTree = "<group>"; };
+		D4146165194CE1EB00402C4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		D4146168194CE1EB00402C4F /* TenTimesDo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TenTimesDo.xcdatamodel; sourceTree = "<group>"; };
+		D414616A194CE1EB00402C4F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D4146170194CE1EB00402C4F /* TenTimesDoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TenTimesDoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4146171194CE1EB00402C4F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D4146178194CE1EB00402C4F /* TenTimesDoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TenTimesDoTests-Info.plist"; sourceTree = "<group>"; };
+		D414617A194CE1EB00402C4F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D414617C194CE1EB00402C4F /* TenTimesDoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TenTimesDoTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D4146149194CE1EB00402C4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4146150194CE1EB00402C4F /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D414616D194CE1EB00402C4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4146173194CE1EB00402C4F /* Cocoa.framework in Frameworks */,
+				D4146172194CE1EB00402C4F /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D4146143194CE1EB00402C4F = {
+			isa = PBXGroup;
+			children = (
+				D4146155194CE1EB00402C4F /* TenTimesDo */,
+				D4146176194CE1EB00402C4F /* TenTimesDoTests */,
+				D414614E194CE1EB00402C4F /* Frameworks */,
+				D414614D194CE1EB00402C4F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D414614D194CE1EB00402C4F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D414614C194CE1EB00402C4F /* TenTimesDo.app */,
+				D4146170194CE1EB00402C4F /* TenTimesDoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D414614E194CE1EB00402C4F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D414614F194CE1EB00402C4F /* Cocoa.framework */,
+				D4146171194CE1EB00402C4F /* XCTest.framework */,
+				D4146151194CE1EB00402C4F /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D4146151194CE1EB00402C4F /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4146152194CE1EB00402C4F /* AppKit.framework */,
+				D4146153194CE1EB00402C4F /* CoreData.framework */,
+				D4146154194CE1EB00402C4F /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		D4146155194CE1EB00402C4F /* TenTimesDo */ = {
+			isa = PBXGroup;
+			children = (
+				D4146161194CE1EB00402C4F /* TTDAppDelegate.h */,
+				D4146162194CE1EB00402C4F /* TTDAppDelegate.m */,
+				D4146164194CE1EB00402C4F /* MainMenu.xib */,
+				D414616A194CE1EB00402C4F /* Images.xcassets */,
+				D4146167194CE1EB00402C4F /* TenTimesDo.xcdatamodeld */,
+				D4146156194CE1EB00402C4F /* Supporting Files */,
+			);
+			path = TenTimesDo;
+			sourceTree = "<group>";
+		};
+		D4146156194CE1EB00402C4F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D4146157194CE1EB00402C4F /* TenTimesDo-Info.plist */,
+				D4146158194CE1EB00402C4F /* InfoPlist.strings */,
+				D414615B194CE1EB00402C4F /* main.m */,
+				D414615D194CE1EB00402C4F /* TenTimesDo-Prefix.pch */,
+				D414615E194CE1EB00402C4F /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D4146176194CE1EB00402C4F /* TenTimesDoTests */ = {
+			isa = PBXGroup;
+			children = (
+				D414617C194CE1EB00402C4F /* TenTimesDoTests.m */,
+				D4146177194CE1EB00402C4F /* Supporting Files */,
+			);
+			path = TenTimesDoTests;
+			sourceTree = "<group>";
+		};
+		D4146177194CE1EB00402C4F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D4146178194CE1EB00402C4F /* TenTimesDoTests-Info.plist */,
+				D4146179194CE1EB00402C4F /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D414614B194CE1EB00402C4F /* TenTimesDo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4146180194CE1EB00402C4F /* Build configuration list for PBXNativeTarget "TenTimesDo" */;
+			buildPhases = (
+				D4146148194CE1EB00402C4F /* Sources */,
+				D4146149194CE1EB00402C4F /* Frameworks */,
+				D414614A194CE1EB00402C4F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TenTimesDo;
+			productName = TenTimesDo;
+			productReference = D414614C194CE1EB00402C4F /* TenTimesDo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D414616F194CE1EB00402C4F /* TenTimesDoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4146183194CE1EB00402C4F /* Build configuration list for PBXNativeTarget "TenTimesDoTests" */;
+			buildPhases = (
+				D414616C194CE1EB00402C4F /* Sources */,
+				D414616D194CE1EB00402C4F /* Frameworks */,
+				D414616E194CE1EB00402C4F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D4146175194CE1EB00402C4F /* PBXTargetDependency */,
+			);
+			name = TenTimesDoTests;
+			productName = TenTimesDoTests;
+			productReference = D4146170194CE1EB00402C4F /* TenTimesDoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D4146144194CE1EB00402C4F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TTD;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = schultyy;
+				TargetAttributes = {
+					D414616F194CE1EB00402C4F = {
+						TestTargetID = D414614B194CE1EB00402C4F;
+					};
+				};
+			};
+			buildConfigurationList = D4146147194CE1EB00402C4F /* Build configuration list for PBXProject "TenTimesDo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D4146143194CE1EB00402C4F;
+			productRefGroup = D414614D194CE1EB00402C4F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D414614B194CE1EB00402C4F /* TenTimesDo */,
+				D414616F194CE1EB00402C4F /* TenTimesDoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D414614A194CE1EB00402C4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D414615A194CE1EB00402C4F /* InfoPlist.strings in Resources */,
+				D414616B194CE1EB00402C4F /* Images.xcassets in Resources */,
+				D4146160194CE1EB00402C4F /* Credits.rtf in Resources */,
+				D4146166194CE1EB00402C4F /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D414616E194CE1EB00402C4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D414617B194CE1EB00402C4F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D4146148194CE1EB00402C4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D414615C194CE1EB00402C4F /* main.m in Sources */,
+				D4146163194CE1EB00402C4F /* TTDAppDelegate.m in Sources */,
+				D4146169194CE1EB00402C4F /* TenTimesDo.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D414616C194CE1EB00402C4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D414617D194CE1EB00402C4F /* TenTimesDoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D4146175194CE1EB00402C4F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D414614B194CE1EB00402C4F /* TenTimesDo */;
+			targetProxy = D4146174194CE1EB00402C4F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D4146158194CE1EB00402C4F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D4146159194CE1EB00402C4F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D414615E194CE1EB00402C4F /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D414615F194CE1EB00402C4F /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		D4146164194CE1EB00402C4F /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D4146165194CE1EB00402C4F /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		D4146179194CE1EB00402C4F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D414617A194CE1EB00402C4F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D414617E194CE1EB00402C4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D414617F194CE1EB00402C4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D4146181194CE1EB00402C4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TenTimesDo/TenTimesDo-Prefix.pch";
+				INFOPLIST_FILE = "TenTimesDo/TenTimesDo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D4146182194CE1EB00402C4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TenTimesDo/TenTimesDo-Prefix.pch";
+				INFOPLIST_FILE = "TenTimesDo/TenTimesDo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D4146184194CE1EB00402C4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TenTimesDo.app/Contents/MacOS/TenTimesDo";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TenTimesDo/TenTimesDo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TenTimesDoTests/TenTimesDoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D4146185194CE1EB00402C4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TenTimesDo.app/Contents/MacOS/TenTimesDo";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TenTimesDo/TenTimesDo-Prefix.pch";
+				INFOPLIST_FILE = "TenTimesDoTests/TenTimesDoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D4146147194CE1EB00402C4F /* Build configuration list for PBXProject "TenTimesDo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D414617E194CE1EB00402C4F /* Debug */,
+				D414617F194CE1EB00402C4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4146180194CE1EB00402C4F /* Build configuration list for PBXNativeTarget "TenTimesDo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4146181194CE1EB00402C4F /* Debug */,
+				D4146182194CE1EB00402C4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D4146183194CE1EB00402C4F /* Build configuration list for PBXNativeTarget "TenTimesDoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4146184194CE1EB00402C4F /* Debug */,
+				D4146185194CE1EB00402C4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D4146167194CE1EB00402C4F /* TenTimesDo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D4146168194CE1EB00402C4F /* TenTimesDo.xcdatamodel */,
+			);
+			currentVersion = D4146168194CE1EB00402C4F /* TenTimesDo.xcdatamodel */;
+			path = TenTimesDo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D4146144194CE1EB00402C4F /* Project object */;
+}
