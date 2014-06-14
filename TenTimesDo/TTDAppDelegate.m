@@ -22,6 +22,14 @@
     [[self mainController] showWindow:self];
 }
 
+#pragma mark - Handler
+
+- (IBAction)createNewTask:(id)sender {
+    [[self mainController] createNewTask];
+}
+
+#pragma mark - Core Data
+
 // Returns the directory the application uses to store the Core Data store file. This code uses a directory named "com.TenTimesDo" in the user's Application Support directory.
 - (NSURL *)applicationFilesDirectory
 {
@@ -96,12 +104,11 @@
 }
 
 // Returns the managed object context for the application (which is already bound to the persistent store coordinator for the application.) 
-- (NSManagedObjectContext *)managedObjectContext
-{
+- (NSManagedObjectContext *)managedObjectContext {
     if (_managedObjectContext) {
         return _managedObjectContext;
     }
-    
+
     NSPersistentStoreCoordinator *coordinator = [self persistentStoreCoordinator];
     if (!coordinator) {
         NSMutableDictionary *dict = [NSMutableDictionary dictionary];
@@ -116,6 +123,7 @@
 
     return _managedObjectContext;
 }
+
 
 // Returns the NSUndoManager for the application. In this case, the manager returned is that of the managed object context for the application.
 - (NSUndoManager *)windowWillReturnUndoManager:(NSWindow *)window

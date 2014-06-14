@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6964F1A63EC08DEB07A25621 /* TTDMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6964F33890730EB98B7382D3 /* TTDMainController.m */; };
 		6964F742DD50FB86FBCA33BF /* TTDTaskListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6964FE64FCA8850D2C015207 /* TTDTaskListViewController.m */; };
+		6964F85539394BDE3716F848 /* TTDTaskEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6964F3DF9D07416E46AC33E5 /* TTDTaskEditorViewController.m */; };
 		D4146150194CE1EB00402C4F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D414614F194CE1EB00402C4F /* Cocoa.framework */; };
 		D414615A194CE1EB00402C4F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D4146158194CE1EB00402C4F /* InfoPlist.strings */; };
 		D414615C194CE1EB00402C4F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D414615B194CE1EB00402C4F /* main.m */; };
@@ -23,6 +24,7 @@
 		D414617D194CE1EB00402C4F /* TenTimesDoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D414617C194CE1EB00402C4F /* TenTimesDoTests.m */; };
 		D4146187194CE39300402C4F /* TTDMainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4146186194CE39300402C4F /* TTDMainWindow.xib */; };
 		D4146189194CE49900402C4F /* TTDTaskListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4146188194CE49900402C4F /* TTDTaskListView.xib */; };
+		D414618B194CE7B300402C4F /* TTDTaskEditorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D414618A194CE7B300402C4F /* TTDTaskEditorView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6964F009FC44A75A681F454D /* TTDTaskEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTDTaskEditorViewController.h; sourceTree = "<group>"; };
 		6964F06F0039DC8841EC27AB /* TTDTaskListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTDTaskListViewController.h; sourceTree = "<group>"; };
 		6964F33890730EB98B7382D3 /* TTDMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTDMainController.m; sourceTree = "<group>"; };
+		6964F3DF9D07416E46AC33E5 /* TTDTaskEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTDTaskEditorViewController.m; sourceTree = "<group>"; };
 		6964FE64FCA8850D2C015207 /* TTDTaskListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTDTaskListViewController.m; sourceTree = "<group>"; };
 		6964FF4CBC111FA79A61A0D3 /* TTDMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTDMainController.h; sourceTree = "<group>"; };
 		D414614C194CE1EB00402C4F /* TenTimesDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TenTimesDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,6 +66,7 @@
 		D414617C194CE1EB00402C4F /* TenTimesDoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TenTimesDoTests.m; sourceTree = "<group>"; };
 		D4146186194CE39300402C4F /* TTDMainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TTDMainWindow.xib; sourceTree = "<group>"; };
 		D4146188194CE49900402C4F /* TTDTaskListView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TTDTaskListView.xib; sourceTree = "<group>"; };
+		D414618A194CE7B300402C4F /* TTDTaskEditorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TTDTaskEditorView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +97,8 @@
 				6964FF4CBC111FA79A61A0D3 /* TTDMainController.h */,
 				6964FE64FCA8850D2C015207 /* TTDTaskListViewController.m */,
 				6964F06F0039DC8841EC27AB /* TTDTaskListViewController.h */,
+				6964F3DF9D07416E46AC33E5 /* TTDTaskEditorViewController.m */,
+				6964F009FC44A75A681F454D /* TTDTaskEditorViewController.h */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -110,6 +117,7 @@
 				D4146164194CE1EB00402C4F /* MainMenu.xib */,
 				D4146186194CE39300402C4F /* TTDMainWindow.xib */,
 				D4146188194CE49900402C4F /* TTDTaskListView.xib */,
+				D414618A194CE7B300402C4F /* TTDTaskEditorView.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -280,6 +288,7 @@
 				D4146160194CE1EB00402C4F /* Credits.rtf in Resources */,
 				D4146189194CE49900402C4F /* TTDTaskListView.xib in Resources */,
 				D4146166194CE1EB00402C4F /* MainMenu.xib in Resources */,
+				D414618B194CE7B300402C4F /* TTDTaskEditorView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +312,7 @@
 				D4146169194CE1EB00402C4F /* TenTimesDo.xcdatamodeld in Sources */,
 				6964F1A63EC08DEB07A25621 /* TTDMainController.m in Sources */,
 				6964F742DD50FB86FBCA33BF /* TTDTaskListViewController.m in Sources */,
+				6964F85539394BDE3716F848 /* TTDTaskEditorViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
