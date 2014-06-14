@@ -8,9 +8,11 @@
 
 #import <Cocoa/Cocoa.h>
 
+@class TTDMainController;
+
 @interface TTDAppDelegate : NSObject <NSApplicationDelegate>
 
-@property (assign) IBOutlet NSWindow *window;
+@property (strong) TTDMainController *mainController;
 
 @property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 @property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;

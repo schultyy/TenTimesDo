@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6964F1A63EC08DEB07A25621 /* TTDMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6964F33890730EB98B7382D3 /* TTDMainController.m */; };
 		D4146150194CE1EB00402C4F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D414614F194CE1EB00402C4F /* Cocoa.framework */; };
 		D414615A194CE1EB00402C4F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D4146158194CE1EB00402C4F /* InfoPlist.strings */; };
 		D414615C194CE1EB00402C4F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D414615B194CE1EB00402C4F /* main.m */; };
@@ -19,6 +20,7 @@
 		D4146173194CE1EB00402C4F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D414614F194CE1EB00402C4F /* Cocoa.framework */; };
 		D414617B194CE1EB00402C4F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D4146179194CE1EB00402C4F /* InfoPlist.strings */; };
 		D414617D194CE1EB00402C4F /* TenTimesDoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D414617C194CE1EB00402C4F /* TenTimesDoTests.m */; };
+		D4146187194CE39300402C4F /* TTDMainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4146186194CE39300402C4F /* TTDMainWindow.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6964F33890730EB98B7382D3 /* TTDMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTDMainController.m; sourceTree = "<group>"; };
+		6964FF4CBC111FA79A61A0D3 /* TTDMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTDMainController.h; sourceTree = "<group>"; };
 		D414614C194CE1EB00402C4F /* TenTimesDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TenTimesDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D414614F194CE1EB00402C4F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		D4146152194CE1EB00402C4F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -52,6 +56,7 @@
 		D4146178194CE1EB00402C4F /* TenTimesDoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TenTimesDoTests-Info.plist"; sourceTree = "<group>"; };
 		D414617A194CE1EB00402C4F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D414617C194CE1EB00402C4F /* TenTimesDoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TenTimesDoTests.m; sourceTree = "<group>"; };
+		D4146186194CE39300402C4F /* TTDMainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TTDMainWindow.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +80,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6964F03701CEB34BD7468213 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6964F33890730EB98B7382D3 /* TTDMainController.m */,
+				6964FF4CBC111FA79A61A0D3 /* TTDMainController.h */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		6964F3100F9B5CD0EECCD668 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D4146167194CE1EB00402C4F /* TenTimesDo.xcdatamodeld */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		6964F8211BD97D4D0B80E503 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D4146164194CE1EB00402C4F /* MainMenu.xib */,
+				D4146186194CE39300402C4F /* TTDMainWindow.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		D4146143194CE1EB00402C4F = {
 			isa = PBXGroup;
 			children = (
@@ -119,10 +150,11 @@
 			children = (
 				D4146161194CE1EB00402C4F /* TTDAppDelegate.h */,
 				D4146162194CE1EB00402C4F /* TTDAppDelegate.m */,
-				D4146164194CE1EB00402C4F /* MainMenu.xib */,
 				D414616A194CE1EB00402C4F /* Images.xcassets */,
-				D4146167194CE1EB00402C4F /* TenTimesDo.xcdatamodeld */,
 				D4146156194CE1EB00402C4F /* Supporting Files */,
+				6964F03701CEB34BD7468213 /* Controllers */,
+				6964F8211BD97D4D0B80E503 /* Resources */,
+				6964F3100F9B5CD0EECCD668 /* Models */,
 			);
 			path = TenTimesDo;
 			sourceTree = "<group>";
@@ -236,6 +268,7 @@
 			files = (
 				D414615A194CE1EB00402C4F /* InfoPlist.strings in Resources */,
 				D414616B194CE1EB00402C4F /* Images.xcassets in Resources */,
+				D4146187194CE39300402C4F /* TTDMainWindow.xib in Resources */,
 				D4146160194CE1EB00402C4F /* Credits.rtf in Resources */,
 				D4146166194CE1EB00402C4F /* MainMenu.xib in Resources */,
 			);
@@ -259,6 +292,7 @@
 				D414615C194CE1EB00402C4F /* main.m in Sources */,
 				D4146163194CE1EB00402C4F /* TTDAppDelegate.m in Sources */,
 				D4146169194CE1EB00402C4F /* TenTimesDo.xcdatamodeld in Sources */,
+				6964F1A63EC08DEB07A25621 /* TTDMainController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,6 +505,7 @@
 				D4146182194CE1EB00402C4F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D4146183194CE1EB00402C4F /* Build configuration list for PBXNativeTarget "TenTimesDoTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +514,7 @@
 				D4146185194CE1EB00402C4F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

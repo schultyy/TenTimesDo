@@ -7,6 +7,7 @@
 //
 
 #import "TTDAppDelegate.h"
+#import "TTDMainController.h"
 
 @implementation TTDAppDelegate
 
@@ -17,6 +18,8 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
+    [self setMainController:[[TTDMainController alloc] init]];
+    [[self mainController] showWindow:self];
 }
 
 // Returns the directory the application uses to store the Core Data store file. This code uses a directory named "com.TenTimesDo" in the user's Application Support directory.
