@@ -5,6 +5,13 @@
 
 #import <Foundation/Foundation.h>
 
+@protocol TTDTaskEditorDelegate;
+
 
 @interface TTDTaskEditorViewController : NSViewController
+
+@property (assign) NSObject<TTDTaskEditorDelegate> *delegate;
+
+-(IBAction) saveTask:(id) sender;
+-(IBAction) discardTask:(id) sender;
 @end

@@ -4,19 +4,22 @@
 //
 
 #import "TTDMainController.h"
+#import "TTDTaskEditorDelegate.h"
 #import "TTDTaskListViewController.h"
 #import "TTDTaskEditorViewController.h"
 
 
-@implementation TTDMainController {
+@interface TTDMainController(TTDTaskEditorDelegate)
+@end
 
-}
+@implementation TTDMainController
 
 -(id) init {
     self = [super initWithWindowNibName:@"TTDMainWindow"];
     if(self){
         [self setTaskListController:[[TTDTaskListViewController alloc] init]];
         [self setTaskEditorController:[[TTDTaskEditorViewController alloc] init]];
+        [[self taskEditorController] setDelegate:self];
     }
     return self;
 }
@@ -33,5 +36,11 @@
     [[self mainView] setContentView: self.taskListController.view];
 }
 
+
+#pragma mark - TTDTaskEditorDelegate
+
+-(void) taskEditor: (TTDTaskEditorViewController *) editor didSaveTask: (NSManagedObject *) task {
+    [self showTaskList];
+}
 
 @end

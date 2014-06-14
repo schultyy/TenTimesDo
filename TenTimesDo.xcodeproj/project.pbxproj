@@ -42,6 +42,7 @@
 		6964F06F0039DC8841EC27AB /* TTDTaskListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTDTaskListViewController.h; sourceTree = "<group>"; };
 		6964F33890730EB98B7382D3 /* TTDMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTDMainController.m; sourceTree = "<group>"; };
 		6964F3DF9D07416E46AC33E5 /* TTDTaskEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTDTaskEditorViewController.m; sourceTree = "<group>"; };
+		6964F8FD776DE5C9C44F0120 /* TTDTaskEditorDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTDTaskEditorDelegate.h; sourceTree = "<group>"; };
 		6964FE64FCA8850D2C015207 /* TTDTaskListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTDTaskListViewController.m; sourceTree = "<group>"; };
 		6964FF4CBC111FA79A61A0D3 /* TTDMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTDMainController.h; sourceTree = "<group>"; };
 		D414614C194CE1EB00402C4F /* TenTimesDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TenTimesDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,6 +102,14 @@
 				6964F009FC44A75A681F454D /* TTDTaskEditorViewController.h */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		6964F2282CD954DE3EEA7C49 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				6964F8FD776DE5C9C44F0120 /* TTDTaskEditorDelegate.h */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		6964F3100F9B5CD0EECCD668 /* Models */ = {
@@ -171,6 +180,7 @@
 				6964F03701CEB34BD7468213 /* Controllers */,
 				6964F8211BD97D4D0B80E503 /* Resources */,
 				6964F3100F9B5CD0EECCD668 /* Models */,
+				6964F2282CD954DE3EEA7C49 /* Protocols */,
 			);
 			path = TenTimesDo;
 			sourceTree = "<group>";

@@ -48,10 +48,42 @@
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="91j-IX-W9K">
+                    <rect key="frame" x="451" y="12" width="82" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="GdW-s4-pbj"/>
+                    </constraints>
+                    <buttonCell key="cell" type="push" title="Save" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ODP-1L-tBA">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="saveTask:" target="-2" id="xh0-4Q-C23"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="tCX-54-RXF">
+                    <rect key="frame" x="364" y="12" width="87" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="75" id="cFT-Rj-8eT"/>
+                    </constraints>
+                    <buttonCell key="cell" type="push" title="Discard" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="m7l-Ud-HWh">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="discardTask:" target="-2" id="25E-98-vBd"/>
+                    </connections>
+                </button>
             </subviews>
             <constraints>
+                <constraint firstItem="91j-IX-W9K" firstAttribute="top" secondItem="VsM-jf-9BA" secondAttribute="bottom" constant="8" id="2AH-pm-VZb"/>
+                <constraint firstAttribute="trailing" secondItem="91j-IX-W9K" secondAttribute="trailing" constant="75" id="6p1-Vq-vTa"/>
                 <constraint firstItem="BhP-WV-BbA" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="79" id="MzJ-H2-3Un"/>
                 <constraint firstAttribute="trailing" secondItem="BhP-WV-BbA" secondAttribute="trailing" constant="75" id="NpJ-67-3gH"/>
+                <constraint firstItem="91j-IX-W9K" firstAttribute="leading" secondItem="tCX-54-RXF" secondAttribute="trailing" constant="12" id="drv-Gx-xMk"/>
+                <constraint firstItem="tCX-54-RXF" firstAttribute="top" secondItem="VsM-jf-9BA" secondAttribute="bottom" constant="8" id="rrL-Yq-pmr"/>
                 <constraint firstItem="VsM-jf-9BA" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="81" id="twk-Jn-hCZ"/>
                 <constraint firstAttribute="trailing" secondItem="VsM-jf-9BA" secondAttribute="trailing" constant="75" id="udp-AT-qey"/>
                 <constraint firstItem="BhP-WV-BbA" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="60" id="vtt-RN-8HD"/>

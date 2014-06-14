@@ -4,6 +4,7 @@
 //
 
 #import "TTDTaskEditorViewController.h"
+#import "TTDTaskEditorDelegate.h"
 
 
 @implementation TTDTaskEditorViewController
@@ -12,5 +13,14 @@
     self = [super initWithNibName:@"TTDTaskEditorView" bundle:nil];
     return self;
 }
+
+- (IBAction)saveTask:(id)sender {
+    [[self delegate] taskEditor:self didSaveTask:nil];
+}
+
+- (IBAction)discardTask:(id)sender {
+    [[self delegate] taskEditor:self didSaveTask:nil];
+}
+
 
 @end
