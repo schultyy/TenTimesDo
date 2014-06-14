@@ -5,6 +5,13 @@
 
 #import <Foundation/Foundation.h>
 
+@class TTDTaskListViewController;
+
 
 @interface TTDMainController : NSWindowController
+
+@property (retain) TTDTaskListViewController *taskListController;
+
+@property IBOutlet NSBox *mainView;
+
 @end

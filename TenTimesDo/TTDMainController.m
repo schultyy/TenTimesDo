@@ -4,6 +4,7 @@
 //
 
 #import "TTDMainController.h"
+#import "TTDTaskListViewController.h"
 
 
 @implementation TTDMainController {
@@ -12,8 +13,14 @@
 
 -(id) init {
     self = [super initWithWindowNibName:@"TTDMainWindow"];
-    if(self){}
+    if(self){
+        [self setTaskListController:[[TTDTaskListViewController alloc] init]];
+    }
     return self;
+}
+
+-(void)windowDidLoad {
+    [[self mainView] setContentView: self.taskListController.view];
 }
 
 @end
