@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13D65" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="TTDIssue" representedClassName="TTDIssue" syncable="YES">
-        <attribute name="headline" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="isDone" optional="YES" attributeType="Boolean" syncable="YES"/>
-        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="headline" attributeType="String" syncable="YES"/>
+        <attribute name="isDone" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="text" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
         <element name="TTDIssue" positionX="-54" positionY="-9" width="128" height="90"/>

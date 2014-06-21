@@ -15,17 +15,6 @@
 @dynamic isDone;
 @dynamic text;
 
--(id)initWithEntity:(NSEntityDescription *)entity insertIntoManagedObjectContext:(NSManagedObjectContext *)context {
-
-    self = [super initWithEntity:entity insertIntoManagedObjectContext:context];
-    if(self) {
-        [self setHeadline:@""];
-        [self setIsDone: [NSNumber numberWithBool:NO]];
-        [self setText:@""];
-    }
-    return self;
-}
-
 -(void)markAsDone {
     [self setValue:[NSNumber numberWithBool:YES]
                      forKey:@"isDone"];
