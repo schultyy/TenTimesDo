@@ -16,7 +16,7 @@
 }
 
 - (IBAction)saveTask:(id)sender {
-    [[self delegate] taskEditor:self didSaveTask:nil];
+    [[self delegate] taskEditor:self didSaveTask: self.currentIssue];
 }
 
 - (IBAction)discardTask:(id)sender {

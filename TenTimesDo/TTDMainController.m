@@ -9,6 +9,7 @@
 #import "TTDTaskEditorViewController.h"
 #import "TTDTaskListDelegate.h"
 #import "TTDIssue.h"
+#import "Underscore.h"
 
 
 @interface TTDMainController()<TTDTaskEditorDelegate, TTDTaskListDelegate>
@@ -64,19 +65,29 @@
 
 #pragma mark - ManagedObjectContext
 
--(void) saveChanges {
+-(BOOL) saveChanges {
     NSError *error = nil;
     [[self managedObjectContext] save: &error];
+
     if(error) {
+
+        NSArray *detailedErrors = [[error userInfo] valueForKey: NSDetailedErrorsKey];
+
+        NSString *errorText = [Underscore.arrayMap(detailedErrors, ^(NSError *err) {
+            return [err localizedDescription];
+        }) componentsJoinedByString:@"\n"];
+
         NSAlert *alert = [[NSAlert alloc] init];
         [alert addButtonWithTitle:@"Ok"];
         [alert setMessageText:@"Failed to save changes"];
 
-        NSString *errorText = [NSString stringWithFormat:@"NSWarningAlertStyle \r %@", [error localizedDescription]];
-
         [alert setInformativeText:errorText];
         [alert setAlertStyle:NSWarningAlertStyle];
         [alert beginSheetModalForWindow:[self window] modalDelegate:self didEndSelector:NULL contextInfo:nil];
+        return NO;
+    }
+    else {
+        return YES;
     }
 }
 
@@ -91,9 +102,10 @@
 
 -(void) taskEditor: (TTDTaskEditorViewController *) editor didSaveTask: (NSManagedObject *) task {
     if(task) {
-        
+        if(self.saveChanges) {
+            [self showTaskList];
+        }
     }
-    [self showTaskList];
 }
 
 @end
