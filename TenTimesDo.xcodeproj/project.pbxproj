@@ -41,6 +41,7 @@
 		6964F009FC44A75A681F454D /* TTDTaskEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTDTaskEditorViewController.h; sourceTree = "<group>"; };
 		6964F06F0039DC8841EC27AB /* TTDTaskListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTDTaskListViewController.h; sourceTree = "<group>"; };
 		6964F33890730EB98B7382D3 /* TTDMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTDMainController.m; sourceTree = "<group>"; };
+		6964F3D94005AF2579C27667 /* TTDTaskListDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTDTaskListDelegate.h; sourceTree = "<group>"; };
 		6964F3DF9D07416E46AC33E5 /* TTDTaskEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTDTaskEditorViewController.m; sourceTree = "<group>"; };
 		6964F8FD776DE5C9C44F0120 /* TTDTaskEditorDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTDTaskEditorDelegate.h; sourceTree = "<group>"; };
 		6964FE64FCA8850D2C015207 /* TTDTaskListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTDTaskListViewController.m; sourceTree = "<group>"; };
@@ -108,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				6964F8FD776DE5C9C44F0120 /* TTDTaskEditorDelegate.h */,
+				6964F3D94005AF2579C27667 /* TTDTaskListDelegate.h */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";

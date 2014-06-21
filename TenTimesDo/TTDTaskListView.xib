@@ -6,6 +6,8 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="TTDTaskListViewController">
             <connections>
+                <outlet property="arrayController" destination="KMi-BW-kXg" id="7Fh-Sb-pUv"/>
+                <outlet property="tableView" destination="EFk-eX-Kli" id="M9Q-nM-jmK"/>
                 <outlet property="view" destination="pf0-f7-15x" id="IWZ-wG-oNg"/>
             </connections>
         </customObject>

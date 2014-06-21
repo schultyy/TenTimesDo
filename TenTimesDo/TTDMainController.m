@@ -7,9 +7,10 @@
 #import "TTDTaskEditorDelegate.h"
 #import "TTDTaskListViewController.h"
 #import "TTDTaskEditorViewController.h"
+#import "TTDTaskListDelegate.h"
 
 
-@interface TTDMainController()<TTDTaskEditorDelegate>
+@interface TTDMainController()<TTDTaskEditorDelegate, TTDTaskListDelegate>
 @end
 
 @implementation TTDMainController
@@ -20,6 +21,8 @@
         [self setManagedObjectContext: context];
         [self setTaskListController:[[TTDTaskListViewController alloc] initWitHManagedObjectContext:self.managedObjectContext]];
         [self setTaskEditorController:[[TTDTaskEditorViewController alloc] init]];
+
+        [[self taskListController] setDelegate:self];
         [[self taskEditorController] setDelegate:self];
     }
     return self;
@@ -37,6 +40,10 @@
     id newIssue = [NSEntityDescription insertNewObjectForEntityForName:@"Issue"
                                                 inManagedObjectContext:self.managedObjectContext];
     [[self taskEditorController] setCurrentIssue:newIssue];
+    [self showTaskEditor];
+}
+
+- (void) showTaskEditor {
     [[self mainView] setContentView:self.taskEditorController.view];
 }
 
@@ -44,6 +51,12 @@
     [[self mainView] setContentView: self.taskListController.view];
 }
 
+#pragma mark - TTDTaskListDelegate
+
+-(void)taskList:(TTDTaskListViewController *)controller didSelectIssue:(NSManagedObject *)issue {
+    [[self taskEditorController] setCurrentIssue:issue];
+    [self showTaskEditor];
+}
 
 #pragma mark - TTDTaskEditorDelegate
 
