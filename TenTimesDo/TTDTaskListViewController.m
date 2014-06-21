@@ -22,10 +22,15 @@
     [[self tableView] setTarget:self];
 }
 
--(void) tableViewDoubleAction: (id) sender {
+-(NSManagedObject *)selectedIssue {
     NSInteger selectedRow = [[self tableView] selectedRow];
-    NSManagedObject *selectedObject = [[[self arrayController] arrangedObjects] objectAtIndex:(NSUInteger) selectedRow];
-    [[self delegate] taskList:self didSelectIssue:selectedObject];
+    return [[[self arrayController] arrangedObjects] objectAtIndex:(NSUInteger) selectedRow];
+}
+
+#pragma mark - TableView actions
+
+-(void) tableViewDoubleAction: (id) sender {
+    [[self delegate] taskList:self didSelectIssue: self.selectedIssue];
 }
 
 @end

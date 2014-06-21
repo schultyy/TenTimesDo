@@ -68,6 +68,11 @@
                                     <action selector="createNewTask:" target="Voe-Tx-rLC" id="cOJ-hu-gGR"/>
                                 </connections>
                             </menuItem>
+                            <menuItem title="Mark as done" keyEquivalent="d" id="LdQ-nH-Av5">
+                                <connections>
+                                    <action selector="markAsDone:" target="Voe-Tx-rLC" id="T3X-vA-XXn"/>
+                                </connections>
+                            </menuItem>
                         </items>
                     </menu>
                 </menuItem>

@@ -21,8 +21,10 @@
 
 -(id) initWithManagedObjectContext: (NSManagedObjectContext *) context;
 
+-(void) showTaskList;
+
 -(void) createNewTask;
 
--(void) showTaskList;
+-(void) markAsDone;
 
 @end

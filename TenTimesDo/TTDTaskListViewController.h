@@ -19,4 +19,7 @@
 @property IBOutlet NSArrayController *arrayController;
 
 -(id) initWitHManagedObjectContext: (NSManagedObjectContext *) context;
+
+-(NSManagedObject *) selectedIssue;
+
 @end

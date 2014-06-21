@@ -28,6 +28,10 @@
     [[self mainController] createNewTask];
 }
 
+-(IBAction) markAsDone: (id) sender {
+    [[self mainController] markAsDone];
+}
+
 #pragma mark - Core Data
 
 // Returns the directory the application uses to store the Core Data store file. This code uses a directory named "com.TenTimesDo" in the user's Application Support directory.

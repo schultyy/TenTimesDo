@@ -134,7 +134,7 @@
                 <constraint firstItem="FTX-2w-x6v" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="pLx-4n-aeb"/>
             </constraints>
         </customView>
-        <arrayController mode="entity" entityName="Issue" automaticallyPreparesContent="YES" id="KMi-BW-kXg">
+        <arrayController mode="entity" entityName="Issue" fetchPredicateFormat="isDone = 0" automaticallyPreparesContent="YES" id="KMi-BW-kXg">
             <connections>
                 <binding destination="-2" name="managedObjectContext" keyPath="managedObjectContext" id="XJY-Gm-GgQ"/>
             </connections>

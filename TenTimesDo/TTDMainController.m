@@ -36,6 +36,16 @@
     [self showTaskList];
 }
 
+- (void) showTaskEditor {
+    [[self mainView] setContentView:self.taskEditorController.view];
+}
+
+- (void)showTaskList {
+    [[self mainView] setContentView: self.taskListController.view];
+}
+
+#pragma mark - Issue actions
+
 - (void)createNewTask {
     id newIssue = [NSEntityDescription insertNewObjectForEntityForName:@"Issue"
                                                 inManagedObjectContext:self.managedObjectContext];
@@ -43,12 +53,31 @@
     [self showTaskEditor];
 }
 
-- (void) showTaskEditor {
-    [[self mainView] setContentView:self.taskEditorController.view];
+-(void)markAsDone {
+    NSManagedObject *selectedIssue = [[self taskListController] selectedIssue];
+    if(selectedIssue) {
+        [selectedIssue setValue:[NSNumber numberWithBool:YES]
+                         forKey:@"isDone"];
+    }
+    [self saveChanges];
 }
 
-- (void)showTaskList {
-    [[self mainView] setContentView: self.taskListController.view];
+#pragma mark - ManagedObjectContext
+
+-(void) saveChanges {
+    NSError *error = nil;
+    [[self managedObjectContext] save: &error];
+    if(error) {
+        NSAlert *alert = [[NSAlert alloc] init];
+        [alert addButtonWithTitle:@"Ok"];
+        [alert setMessageText:@"Failed to save changes"];
+
+        NSString *errorText = [NSString stringWithFormat:@"NSWarningAlertStyle \r %@", [error localizedDescription]];
+
+        [alert setInformativeText:errorText];
+        [alert setAlertStyle:NSWarningAlertStyle];
+        [alert beginSheetModalForWindow:[self window] modalDelegate:self didEndSelector:NULL contextInfo:nil];
+    }
 }
 
 #pragma mark - TTDTaskListDelegate
