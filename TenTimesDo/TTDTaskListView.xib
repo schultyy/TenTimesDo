@@ -117,7 +117,7 @@
                         <rect key="frame" x="1" y="1" width="0.0" height="16"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </scroller>
-                    <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="37" horizontal="NO" id="MRj-ty-eXO">
+                    <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="MRj-ty-eXO">
                         <rect key="frame" x="224" y="17" width="15" height="102"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </scroller>
@@ -134,7 +134,7 @@
                 <constraint firstItem="FTX-2w-x6v" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="pLx-4n-aeb"/>
             </constraints>
         </customView>
-        <arrayController mode="entity" entityName="Issue" fetchPredicateFormat="isDone = 0" automaticallyPreparesContent="YES" id="KMi-BW-kXg">
+        <arrayController mode="entity" entityName="TTDIssue" fetchPredicateFormat="" automaticallyPreparesContent="YES" id="KMi-BW-kXg">
             <connections>
                 <binding destination="-2" name="managedObjectContext" keyPath="managedObjectContext" id="XJY-Gm-GgQ"/>
             </connections>

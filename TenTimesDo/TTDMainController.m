@@ -47,7 +47,7 @@
 #pragma mark - Issue actions
 
 - (void)createNewTask {
-    id newIssue = [NSEntityDescription insertNewObjectForEntityForName:@"Issue"
+    id newIssue = [NSEntityDescription insertNewObjectForEntityForName:@"TTDIssue"
                                                 inManagedObjectContext:self.managedObjectContext];
     [[self taskEditorController] setCurrentIssue:newIssue];
     [self showTaskEditor];
