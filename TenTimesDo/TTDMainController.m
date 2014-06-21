@@ -93,14 +93,14 @@
 
 #pragma mark - TTDTaskListDelegate
 
--(void)taskList:(TTDTaskListViewController *)controller didSelectIssue:(NSManagedObject *)issue {
+-(void)taskList:(TTDTaskListViewController *)controller didSelectIssue:(TTDIssue *)issue {
     [[self taskEditorController] setCurrentIssue:issue];
     [self showTaskEditor];
 }
 
 #pragma mark - TTDTaskEditorDelegate
 
--(void) taskEditor: (TTDTaskEditorViewController *) editor didSaveTask: (NSManagedObject *) task {
+-(void) taskEditor: (TTDTaskEditorViewController *) editor didSaveTask: (TTDIssue *) task {
     if(task) {
         if(self.saveChanges) {
             [self showTaskList];
