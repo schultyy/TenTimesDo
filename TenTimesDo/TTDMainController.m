@@ -9,15 +9,16 @@
 #import "TTDTaskEditorViewController.h"
 
 
-@interface TTDMainController(TTDTaskEditorDelegate)
+@interface TTDMainController()<TTDTaskEditorDelegate>
 @end
 
 @implementation TTDMainController
 
--(id) init {
+- (id)initWithManagedObjectContext:(NSManagedObjectContext *)context {
     self = [super initWithWindowNibName:@"TTDMainWindow"];
     if(self){
-        [self setTaskListController:[[TTDTaskListViewController alloc] init]];
+        [self setManagedObjectContext: context];
+        [self setTaskListController:[[TTDTaskListViewController alloc] initWitHManagedObjectContext:self.managedObjectContext]];
         [self setTaskEditorController:[[TTDTaskEditorViewController alloc] init]];
         [[self taskEditorController] setDelegate:self];
     }
@@ -28,7 +29,14 @@
 
 }
 
+-(void)awakeFromNib {
+    [self showTaskList];
+}
+
 - (void)createNewTask {
+    id newIssue = [NSEntityDescription insertNewObjectForEntityForName:@"Issue"
+                                                inManagedObjectContext:self.managedObjectContext];
+    [[self taskEditorController] setCurrentIssue:newIssue];
     [[self mainView] setContentView:self.taskEditorController.view];
 }
 
@@ -40,6 +48,9 @@
 #pragma mark - TTDTaskEditorDelegate
 
 -(void) taskEditor: (TTDTaskEditorViewController *) editor didSaveTask: (NSManagedObject *) task {
+    if(task) {
+        
+    }
     [self showTaskList];
 }
 

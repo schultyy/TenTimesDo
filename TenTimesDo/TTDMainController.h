@@ -15,7 +15,11 @@
 
 @property (retain) TTDTaskEditorViewController *taskEditorController;
 
+@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+
 @property IBOutlet NSBox *mainView;
+
+-(id) initWithManagedObjectContext: (NSManagedObjectContext *) context;
 
 -(void) createNewTask;
 

@@ -18,7 +18,7 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
-    [self setMainController:[[TTDMainController alloc] init]];
+    [self setMainController:[[TTDMainController alloc] initWithManagedObjectContext:self.managedObjectContext]];
     [[self mainController] showWindow:self];
 }
 

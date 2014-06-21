@@ -8,4 +8,7 @@
 
 @interface TTDTaskListViewController : NSViewController
 
+@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+
+-(id) initWitHManagedObjectContext: (NSManagedObjectContext *) context;
 @end

@@ -10,6 +10,8 @@
 
 @interface TTDTaskEditorViewController : NSViewController
 
+@property (retain) NSManagedObject *currentIssue;
+
 @property (assign) NSObject<TTDTaskEditorDelegate> *delegate;
 
 -(IBAction) saveTask:(id) sender;

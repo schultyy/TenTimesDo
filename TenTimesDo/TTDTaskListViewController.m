@@ -8,8 +8,11 @@
 
 @implementation TTDTaskListViewController
 
--(id) init {
+- (id)initWitHManagedObjectContext:(NSManagedObjectContext *)context {
     self = [super initWithNibName:@"TTDTaskListView" bundle:nil];
+    if(self) {
+        [self setManagedObjectContext:context];
+    }
     return self;
 }
 
