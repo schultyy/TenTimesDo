@@ -15,6 +15,8 @@
 
 @property (assign) NSObject<TTDTaskListDelegate> *delegate;
 
+@property (retain) NSPredicate *filterPredicate;
+
 @property IBOutlet NSTableView *tableView;
 
 @property IBOutlet NSArrayController *arrayController;

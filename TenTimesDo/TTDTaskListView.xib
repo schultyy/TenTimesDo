@@ -136,6 +136,7 @@
         </customView>
         <arrayController mode="entity" entityName="TTDIssue" fetchPredicateFormat="" automaticallyPreparesContent="YES" id="KMi-BW-kXg">
             <connections>
+                <binding destination="-2" name="filterPredicate" keyPath="self.filterPredicate" id="9aF-Ge-hyt"/>
                 <binding destination="-2" name="managedObjectContext" keyPath="managedObjectContext" id="XJY-Gm-GgQ"/>
             </connections>
         </arrayController>

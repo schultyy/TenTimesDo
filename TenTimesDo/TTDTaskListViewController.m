@@ -14,6 +14,7 @@
     self = [super initWithNibName:@"TTDTaskListView" bundle:nil];
     if(self) {
         [self setManagedObjectContext:context];
+        [self setFilterPredicate:[NSPredicate predicateWithFormat:@"isDone = %@", [NSNumber numberWithBool:NO]]];
     }
     return self;
 }
