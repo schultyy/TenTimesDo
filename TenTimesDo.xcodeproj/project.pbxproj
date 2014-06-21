@@ -25,6 +25,7 @@
 		D4146187194CE39300402C4F /* TTDMainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4146186194CE39300402C4F /* TTDMainWindow.xib */; };
 		D4146189194CE49900402C4F /* TTDTaskListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4146188194CE49900402C4F /* TTDTaskListView.xib */; };
 		D414618B194CE7B300402C4F /* TTDTaskEditorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D414618A194CE7B300402C4F /* TTDTaskEditorView.xib */; };
+		D46AA0B21955CDE700F4A3CF /* TTDIssue.m in Sources */ = {isa = PBXBuildFile; fileRef = D46AA0B11955CDE700F4A3CF /* TTDIssue.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,8 @@
 		D4146186194CE39300402C4F /* TTDMainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TTDMainWindow.xib; sourceTree = "<group>"; };
 		D4146188194CE49900402C4F /* TTDTaskListView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TTDTaskListView.xib; sourceTree = "<group>"; };
 		D414618A194CE7B300402C4F /* TTDTaskEditorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TTDTaskEditorView.xib; sourceTree = "<group>"; };
+		D46AA0B01955CDE700F4A3CF /* TTDIssue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTDIssue.h; sourceTree = "<group>"; };
+		D46AA0B11955CDE700F4A3CF /* TTDIssue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTDIssue.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +121,8 @@
 			isa = PBXGroup;
 			children = (
 				D4146167194CE1EB00402C4F /* TenTimesDo.xcdatamodeld */,
+				D46AA0B01955CDE700F4A3CF /* TTDIssue.h */,
+				D46AA0B11955CDE700F4A3CF /* TTDIssue.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -324,6 +329,7 @@
 				D4146169194CE1EB00402C4F /* TenTimesDo.xcdatamodeld in Sources */,
 				6964F1A63EC08DEB07A25621 /* TTDMainController.m in Sources */,
 				6964F742DD50FB86FBCA33BF /* TTDTaskListViewController.m in Sources */,
+				D46AA0B21955CDE700F4A3CF /* TTDIssue.m in Sources */,
 				6964F85539394BDE3716F848 /* TTDTaskEditorViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

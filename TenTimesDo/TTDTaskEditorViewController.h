@@ -6,11 +6,12 @@
 #import <Foundation/Foundation.h>
 
 @protocol TTDTaskEditorDelegate;
+@class TTDIssue;
 
 
 @interface TTDTaskEditorViewController : NSViewController
 
-@property (retain) NSManagedObject *currentIssue;
+@property (retain) TTDIssue *currentIssue;
 
 @property (assign) NSObject<TTDTaskEditorDelegate> *delegate;
 

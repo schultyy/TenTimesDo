@@ -6,9 +6,10 @@
 #import <Foundation/Foundation.h>
 
 @class TTDTaskEditorViewController;
+@class TTDIssue;
 
 @protocol TTDTaskEditorDelegate <NSObject>
 
--(void) taskEditor: (TTDTaskEditorViewController *) editor didSaveTask: (NSManagedObject *) task;
+-(void) taskEditor: (TTDTaskEditorViewController *) editor didSaveTask: (TTDIssue *) task;
 
 @end

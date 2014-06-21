@@ -6,6 +6,7 @@
 #import <Foundation/Foundation.h>
 
 @protocol TTDTaskListDelegate;
+@class TTDIssue;
 
 
 @interface TTDTaskListViewController : NSViewController
@@ -20,6 +21,6 @@
 
 -(id) initWitHManagedObjectContext: (NSManagedObjectContext *) context;
 
--(NSManagedObject *) selectedIssue;
+-(TTDIssue *) selectedIssue;
 
 @end

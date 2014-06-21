@@ -8,6 +8,7 @@
 #import "TTDTaskListViewController.h"
 #import "TTDTaskEditorViewController.h"
 #import "TTDTaskListDelegate.h"
+#import "TTDIssue.h"
 
 
 @interface TTDMainController()<TTDTaskEditorDelegate, TTDTaskListDelegate>
@@ -54,10 +55,9 @@
 }
 
 -(void)markAsDone {
-    NSManagedObject *selectedIssue = [[self taskListController] selectedIssue];
+    TTDIssue *selectedIssue = [[self taskListController] selectedIssue];
     if(selectedIssue) {
-        [selectedIssue setValue:[NSNumber numberWithBool:YES]
-                         forKey:@"isDone"];
+        [selectedIssue markAsDone];
     }
     [self saveChanges];
 }

@@ -6,9 +6,10 @@
 #import <Foundation/Foundation.h>
 
 @class TTDTaskListViewController;
+@class TTDIssue;
 
 @protocol TTDTaskListDelegate <NSObject>
 
--(void) taskList: (TTDTaskListViewController *) controller didSelectIssue: (NSManagedObject *) issue;
+-(void) taskList: (TTDTaskListViewController *) controller didSelectIssue: (TTDIssue *) issue;
 
 @end

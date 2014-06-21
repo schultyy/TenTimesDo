@@ -5,6 +5,7 @@
 
 #import "TTDTaskListViewController.h"
 #import "TTDTaskListDelegate.h"
+#import "TTDIssue.h"
 
 
 @implementation TTDTaskListViewController
@@ -22,7 +23,7 @@
     [[self tableView] setTarget:self];
 }
 
--(NSManagedObject *)selectedIssue {
+-(TTDIssue *)selectedIssue {
     NSInteger selectedRow = [[self tableView] selectedRow];
     return [[[self arrayController] arrangedObjects] objectAtIndex:(NSUInteger) selectedRow];
 }

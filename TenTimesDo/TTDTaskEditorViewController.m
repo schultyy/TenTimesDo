@@ -5,6 +5,7 @@
 
 #import "TTDTaskEditorViewController.h"
 #import "TTDTaskEditorDelegate.h"
+#import "TTDIssue.h"
 
 
 @implementation TTDTaskEditorViewController
