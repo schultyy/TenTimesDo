@@ -10,6 +10,7 @@
 
 @protocol TTDTaskEditorDelegate <NSObject>
 
--(void) taskEditor: (TTDTaskEditorViewController *) editor didSaveTask: (TTDIssue *) task;
+-(void) taskEditor: (TTDTaskEditorViewController *) editor saveTask: (TTDIssue *) task;
+-(void) taskEditor: (TTDTaskEditorViewController *) editor discardTask: (TTDIssue *) task;
 
 @end

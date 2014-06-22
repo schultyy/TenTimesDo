@@ -16,11 +16,11 @@
 }
 
 - (IBAction)saveTask:(id)sender {
-    [[self delegate] taskEditor:self didSaveTask: self.currentIssue];
+    [[self delegate] taskEditor:self saveTask: self.currentIssue];
 }
 
 - (IBAction)discardTask:(id)sender {
-    [[self delegate] taskEditor:self didSaveTask:nil];
+    [[self delegate] taskEditor:self discardTask:self.currentIssue];
 }
 
 #pragma mark - TextView delegates

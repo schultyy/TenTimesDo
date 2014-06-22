@@ -100,12 +100,13 @@
 
 #pragma mark - TTDTaskEditorDelegate
 
--(void) taskEditor: (TTDTaskEditorViewController *) editor didSaveTask: (TTDIssue *) task {
-    if(task) {
-        if(self.saveChanges) {
-            [self showTaskList];
-        }
+-(void) taskEditor: (TTDTaskEditorViewController *) editor saveTask: (TTDIssue *) task {
+    if(self.saveChanges) {
+        [self showTaskList];
     }
+}
+-(void) taskEditor: (TTDTaskEditorViewController *) editor discardTask: (TTDIssue *) task {
+    [self showTaskList];
 }
 
 @end
