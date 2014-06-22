@@ -32,6 +32,7 @@
                                 <bool key="NSContinuouslyUpdatesValue" value="YES"/>
                             </dictionary>
                         </binding>
+                        <outlet property="nextKeyView" destination="VsM-jf-9BA" id="RCI-Pb-xSX"/>
                     </connections>
                 </textField>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Un7-G3-nGz">
@@ -61,6 +62,7 @@
                             </dictionary>
                         </binding>
                         <outlet property="delegate" destination="-2" id="SW1-RC-0pi"/>
+                        <outlet property="nextKeyView" destination="91j-IX-W9K" id="HHd-7j-UUA"/>
                     </connections>
                 </textField>
                 <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="91j-IX-W9K">
@@ -104,6 +106,9 @@
                 <constraint firstItem="BhP-WV-BbA" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="60" id="vtt-RN-8HD"/>
                 <constraint firstItem="VsM-jf-9BA" firstAttribute="top" secondItem="BhP-WV-BbA" secondAttribute="bottom" constant="10" id="x5h-ag-FLK"/>
             </constraints>
+            <connections>
+                <outlet property="nextKeyView" destination="BhP-WV-BbA" id="xUa-Tk-vBa"/>
+            </connections>
         </customView>
     </objects>
 </document>
