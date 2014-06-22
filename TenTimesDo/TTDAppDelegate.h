@@ -19,6 +19,7 @@
 @property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 
 -(IBAction) createNewTask: (id) sender;
+-(IBAction) createNewProject: (id) sender;
 -(IBAction) markAsDone: (id) sender;
 -(IBAction) showAllIssues: (id) sender;
 -(IBAction) showUnresolvedIssues: (id) sender;

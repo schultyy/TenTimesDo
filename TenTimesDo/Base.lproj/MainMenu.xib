@@ -76,6 +76,19 @@
                         </items>
                     </menu>
                 </menuItem>
+                <menuItem title="Project" id="v8n-3E-Nwq" userLabel="Menu Item - Project">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Project" id="w5h-vK-QtT">
+                        <items>
+                            <menuItem title="New" id="2vy-TZ-j7h">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="createNewProject:" target="Voe-Tx-rLC" id="dhd-Zk-1xc"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
                 <menuItem title="View" id="H8h-7b-M4v">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <menu key="submenu" title="View" id="HyV-fh-RgO">

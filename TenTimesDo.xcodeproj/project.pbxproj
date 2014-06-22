@@ -12,6 +12,7 @@
 		6964F1A63EC08DEB07A25621 /* TTDMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6964F33890730EB98B7382D3 /* TTDMainController.m */; };
 		6964F742DD50FB86FBCA33BF /* TTDTaskListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6964FE64FCA8850D2C015207 /* TTDTaskListViewController.m */; };
 		6964F85539394BDE3716F848 /* TTDTaskEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6964F3DF9D07416E46AC33E5 /* TTDTaskEditorViewController.m */; };
+		6964FAF77C5F5B70F5B12FE6 /* TTDProjectEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6964FF7FD8E397E96E955F76 /* TTDProjectEditorViewController.m */; };
 		D4146150194CE1EB00402C4F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D414614F194CE1EB00402C4F /* Cocoa.framework */; };
 		D414615A194CE1EB00402C4F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D4146158194CE1EB00402C4F /* InfoPlist.strings */; };
 		D414615C194CE1EB00402C4F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D414615B194CE1EB00402C4F /* main.m */; };
@@ -28,6 +29,7 @@
 		D4146189194CE49900402C4F /* TTDTaskListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4146188194CE49900402C4F /* TTDTaskListView.xib */; };
 		D414618B194CE7B300402C4F /* TTDTaskEditorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D414618A194CE7B300402C4F /* TTDTaskEditorView.xib */; };
 		D46AA0B21955CDE700F4A3CF /* TTDIssue.m in Sources */ = {isa = PBXBuildFile; fileRef = D46AA0B11955CDE700F4A3CF /* TTDIssue.m */; };
+		D46AA0B41957982D00F4A3CF /* TTDProjectEditorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D46AA0B31957982D00F4A3CF /* TTDProjectEditorView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,8 +51,11 @@
 		6964F3DF9D07416E46AC33E5 /* TTDTaskEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTDTaskEditorViewController.m; sourceTree = "<group>"; };
 		6964F5D876E5F707A9E4D769 /* TTDYesNoTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTDYesNoTransformer.m; sourceTree = "<group>"; };
 		6964F8FD776DE5C9C44F0120 /* TTDTaskEditorDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTDTaskEditorDelegate.h; sourceTree = "<group>"; };
+		6964FA43E950C8C0F3B3479E /* TTDProjectEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTDProjectEditorViewController.h; sourceTree = "<group>"; };
 		6964FE64FCA8850D2C015207 /* TTDTaskListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTDTaskListViewController.m; sourceTree = "<group>"; };
 		6964FF4CBC111FA79A61A0D3 /* TTDMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTDMainController.h; sourceTree = "<group>"; };
+		6964FF7FD8E397E96E955F76 /* TTDProjectEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTDProjectEditorViewController.m; sourceTree = "<group>"; };
+		6964FFA1EBDE78BDD034B99A /* TTDProjectEditorDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTDProjectEditorDelegate.h; sourceTree = "<group>"; };
 		8E05F20665D34EE384519D4D /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		D414614C194CE1EB00402C4F /* TenTimesDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TenTimesDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D414614F194CE1EB00402C4F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -77,6 +82,7 @@
 		D414618A194CE7B300402C4F /* TTDTaskEditorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TTDTaskEditorView.xib; sourceTree = "<group>"; };
 		D46AA0B01955CDE700F4A3CF /* TTDIssue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTDIssue.h; sourceTree = "<group>"; };
 		D46AA0B11955CDE700F4A3CF /* TTDIssue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTDIssue.m; sourceTree = "<group>"; };
+		D46AA0B31957982D00F4A3CF /* TTDProjectEditorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TTDProjectEditorView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +116,8 @@
 				6964F06F0039DC8841EC27AB /* TTDTaskListViewController.h */,
 				6964F3DF9D07416E46AC33E5 /* TTDTaskEditorViewController.m */,
 				6964F009FC44A75A681F454D /* TTDTaskEditorViewController.h */,
+				6964FF7FD8E397E96E955F76 /* TTDProjectEditorViewController.m */,
+				6964FA43E950C8C0F3B3479E /* TTDProjectEditorViewController.h */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -119,6 +127,7 @@
 			children = (
 				6964F8FD776DE5C9C44F0120 /* TTDTaskEditorDelegate.h */,
 				6964F3D94005AF2579C27667 /* TTDTaskListDelegate.h */,
+				6964FFA1EBDE78BDD034B99A /* TTDProjectEditorDelegate.h */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -148,6 +157,7 @@
 				D4146186194CE39300402C4F /* TTDMainWindow.xib */,
 				D4146188194CE49900402C4F /* TTDTaskListView.xib */,
 				D414618A194CE7B300402C4F /* TTDTaskEditorView.xib */,
+				D46AA0B31957982D00F4A3CF /* TTDProjectEditorView.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -305,8 +315,6 @@
 			mainGroup = D4146143194CE1EB00402C4F;
 			productRefGroup = D414614D194CE1EB00402C4F /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-			);
 			projectRoot = "";
 			targets = (
 				D414614B194CE1EB00402C4F /* TenTimesDo */,
@@ -326,6 +334,7 @@
 				D4146160194CE1EB00402C4F /* Credits.rtf in Resources */,
 				D4146189194CE49900402C4F /* TTDTaskListView.xib in Resources */,
 				D4146166194CE1EB00402C4F /* MainMenu.xib in Resources */,
+				D46AA0B41957982D00F4A3CF /* TTDProjectEditorView.xib in Resources */,
 				D414618B194CE7B300402C4F /* TTDTaskEditorView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -386,6 +395,7 @@
 				D46AA0B21955CDE700F4A3CF /* TTDIssue.m in Sources */,
 				6964F85539394BDE3716F848 /* TTDTaskEditorViewController.m in Sources */,
 				6964F0F6A18FF2A0E922919E /* TTDYesNoTransformer.m in Sources */,
+				6964FAF77C5F5B70F5B12FE6 /* TTDProjectEditorViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

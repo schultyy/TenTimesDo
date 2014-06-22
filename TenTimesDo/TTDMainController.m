@@ -10,9 +10,11 @@
 #import "TTDTaskListDelegate.h"
 #import "TTDIssue.h"
 #import "Underscore.h"
+#import "TTDProjectEditorViewController.h"
+#import "TTDProjectEditorDelegate.h"
 
 
-@interface TTDMainController()<TTDTaskEditorDelegate, TTDTaskListDelegate>
+@interface TTDMainController()<TTDTaskEditorDelegate, TTDTaskListDelegate, TTDProjectEditorDelegate>
 @end
 
 @implementation TTDMainController
@@ -23,9 +25,11 @@
         [self setManagedObjectContext: context];
         [self setTaskListController:[[TTDTaskListViewController alloc] initWitHManagedObjectContext:self.managedObjectContext]];
         [self setTaskEditorController:[[TTDTaskEditorViewController alloc] init]];
+        [self setProjectEditorController:[[TTDProjectEditorViewController alloc] init]];
 
         [[self taskListController] setDelegate:self];
         [[self taskEditorController] setDelegate:self];
+        [[self projectEditorController] setDelegate:self];
     }
     return self;
 }
@@ -47,12 +51,25 @@
     [[self mainView] setContentView: self.taskListController.view];
 }
 
+-(void) showProjectEditor {
+    [[self mainView] setContentView:self.projectEditorController.view];
+}
+
 -(void) showAllIssues {
     [[self taskListController] showAll];
 }
 
 -(void) showUnresolvedIssues {
     [[self taskListController] showUnresolved];
+}
+
+# pragma mark - Project actions
+
+-(void) createProject {
+    id newProject = [NSEntityDescription insertNewObjectForEntityForName:@"TTDProject"
+                                                  inManagedObjectContext:self.managedObjectContext];
+    [[self projectEditorController] setCurrentProject:newProject];
+    [self showProjectEditor];
 }
 
 #pragma mark - Issue actions
@@ -99,6 +116,19 @@
     else {
         return YES;
     }
+}
+
+#pragma mark - TTDProjectEditorDelegate
+
+-(void)projectEditor:(TTDProjectEditorViewController *)editor saveProject:(NSManagedObject *)project {
+    if(self.saveChanges) {
+        [self showTaskList];
+    }
+}
+
+-(void)projectEditor:(TTDProjectEditorViewController *)editor discardProject:(NSManagedObject *)project {
+    [[self managedObjectContext] rollback];
+    [self showTaskList];
 }
 
 #pragma mark - TTDTaskListDelegate

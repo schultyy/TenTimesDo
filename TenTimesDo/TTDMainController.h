@@ -7,6 +7,7 @@
 
 @class TTDTaskListViewController;
 @class TTDTaskEditorViewController;
+@class TTDProjectEditorViewController;
 
 
 @interface TTDMainController : NSWindowController
@@ -14,6 +15,8 @@
 @property (retain) TTDTaskListViewController *taskListController;
 
 @property (retain) TTDTaskEditorViewController *taskEditorController;
+
+@property (retain) TTDProjectEditorViewController *projectEditorController;
 
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 
@@ -24,6 +27,8 @@
 -(void) showTaskList;
 
 -(void) createNewTask;
+
+-(void) createProject;
 
 -(void) markAsDone;
 

@@ -28,6 +28,10 @@
     [[self mainController] createNewTask];
 }
 
+-(IBAction)createNewProject:(id)sender {
+    [[self mainController] createProject];
+}
+
 -(IBAction) markAsDone: (id) sender {
     [[self mainController] markAsDone];
 }
