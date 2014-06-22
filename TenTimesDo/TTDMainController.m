@@ -114,6 +114,7 @@
     }
 }
 -(void) taskEditor: (TTDTaskEditorViewController *) editor discardTask: (TTDIssue *) task {
+    [[self managedObjectContext] rollback];
     [self showTaskList];
 }
 
