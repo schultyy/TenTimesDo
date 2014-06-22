@@ -32,6 +32,14 @@
     [[self mainController] markAsDone];
 }
 
+-(IBAction) showAllIssues: (id) sender {
+    [[self mainController] showAllIssues];
+}
+
+-(IBAction) showUnresolvedIssues: (id) sender {
+    [[self mainController] showUnresolvedIssues];
+}
+
 #pragma mark - Core Data
 
 // Returns the directory the application uses to store the Core Data store file. This code uses a directory named "com.TenTimesDo" in the user's Application Support directory.

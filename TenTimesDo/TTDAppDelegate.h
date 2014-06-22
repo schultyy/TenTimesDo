@@ -20,5 +20,7 @@
 
 -(IBAction) createNewTask: (id) sender;
 -(IBAction) markAsDone: (id) sender;
+-(IBAction) showAllIssues: (id) sender;
+-(IBAction) showUnresolvedIssues: (id) sender;
 
 @end

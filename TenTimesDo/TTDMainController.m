@@ -46,6 +46,14 @@
     [[self mainView] setContentView: self.taskListController.view];
 }
 
+-(void) showAllIssues {
+    [[self taskListController] showAll];
+}
+
+-(void) showUnresolvedIssues {
+    [[self taskListController] showUnresolved];
+}
+
 #pragma mark - Issue actions
 
 - (void)createNewTask {

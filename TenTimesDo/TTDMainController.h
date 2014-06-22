@@ -27,4 +27,8 @@
 
 -(void) markAsDone;
 
+-(void) showAllIssues;
+
+-(void) showUnresolvedIssues;
+
 @end

@@ -14,7 +14,7 @@
     self = [super initWithNibName:@"TTDTaskListView" bundle:nil];
     if(self) {
         [self setManagedObjectContext:context];
-        [self setFilterPredicate:[NSPredicate predicateWithFormat:@"isDone = %@", [NSNumber numberWithBool:NO]]];
+        [self showUnresolved];
     }
     return self;
 }
@@ -30,6 +30,14 @@
         return nil;
     }
     return [[[self arrayController] arrangedObjects] objectAtIndex:(NSUInteger) selectedRow];
+}
+
+-(void) showUnresolved {
+    [self setFilterPredicate:[NSPredicate predicateWithFormat:@"isDone = %@", [NSNumber numberWithBool:NO]]];
+}
+
+-(void) showAll {
+    [self setFilterPredicate: nil];
 }
 
 #pragma mark - TableView actions

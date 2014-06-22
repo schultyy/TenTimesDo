@@ -25,4 +25,8 @@
 
 -(TTDIssue *) selectedIssue;
 
+-(void) showUnresolved;
+
+-(void) showAll;
+
 @end
