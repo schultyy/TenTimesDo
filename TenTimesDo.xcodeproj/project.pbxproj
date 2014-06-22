@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		13C39844596749FCA489922E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50E0453DB189412782605F3A /* libPods.a */; };
+		6964F0F6A18FF2A0E922919E /* TTDYesNoTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6964F5D876E5F707A9E4D769 /* TTDYesNoTransformer.m */; };
 		6964F1A63EC08DEB07A25621 /* TTDMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6964F33890730EB98B7382D3 /* TTDMainController.m */; };
 		6964F742DD50FB86FBCA33BF /* TTDTaskListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6964FE64FCA8850D2C015207 /* TTDTaskListViewController.m */; };
 		6964F85539394BDE3716F848 /* TTDTaskEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6964F3DF9D07416E46AC33E5 /* TTDTaskEditorViewController.m */; };
@@ -46,6 +47,7 @@
 		6964F33890730EB98B7382D3 /* TTDMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTDMainController.m; sourceTree = "<group>"; };
 		6964F3D94005AF2579C27667 /* TTDTaskListDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTDTaskListDelegate.h; sourceTree = "<group>"; };
 		6964F3DF9D07416E46AC33E5 /* TTDTaskEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTDTaskEditorViewController.m; sourceTree = "<group>"; };
+		6964F5D876E5F707A9E4D769 /* TTDYesNoTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTDYesNoTransformer.m; sourceTree = "<group>"; };
 		6964F8FD776DE5C9C44F0120 /* TTDTaskEditorDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTDTaskEditorDelegate.h; sourceTree = "<group>"; };
 		6964FE64FCA8850D2C015207 /* TTDTaskListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTDTaskListViewController.m; sourceTree = "<group>"; };
 		6964FF4CBC111FA79A61A0D3 /* TTDMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTDMainController.h; sourceTree = "<group>"; };
@@ -121,6 +123,14 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		6964F2A5996180EDB19184C9 /* Transformers */ = {
+			isa = PBXGroup;
+			children = (
+				6964F5D876E5F707A9E4D769 /* TTDYesNoTransformer.m */,
+			);
+			path = Transformers;
+			sourceTree = "<group>";
+		};
 		6964F3100F9B5CD0EECCD668 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -194,6 +204,7 @@
 				6964F8211BD97D4D0B80E503 /* Resources */,
 				6964F3100F9B5CD0EECCD668 /* Models */,
 				6964F2282CD954DE3EEA7C49 /* Protocols */,
+				6964F2A5996180EDB19184C9 /* Transformers */,
 			);
 			path = TenTimesDo;
 			sourceTree = "<group>";
@@ -374,6 +385,7 @@
 				6964F742DD50FB86FBCA33BF /* TTDTaskListViewController.m in Sources */,
 				D46AA0B21955CDE700F4A3CF /* TTDIssue.m in Sources */,
 				6964F85539394BDE3716F848 /* TTDTaskEditorViewController.m in Sources */,
+				6964F0F6A18FF2A0E922919E /* TTDYesNoTransformer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
