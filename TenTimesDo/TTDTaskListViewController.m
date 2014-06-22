@@ -26,13 +26,19 @@
 
 -(TTDIssue *)selectedIssue {
     NSInteger selectedRow = [[self tableView] selectedRow];
+    if(selectedRow == -1) {
+        return nil;
+    }
     return [[[self arrayController] arrangedObjects] objectAtIndex:(NSUInteger) selectedRow];
 }
 
 #pragma mark - TableView actions
 
 -(void) tableViewDoubleAction: (id) sender {
-    [[self delegate] taskList:self didSelectIssue: self.selectedIssue];
+    TTDIssue *issue = [self selectedIssue];
+    if(issue) {
+        [[self delegate] taskList:self didSelectIssue: issue];
+    }
 }
 
 @end
