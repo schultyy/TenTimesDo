@@ -40,6 +40,10 @@
     [self setFilterPredicate: nil];
 }
 
+-(void) invalidate {
+    [[self arrayController] rearrangeObjects];
+}
+
 #pragma mark - TableView actions
 
 -(void) tableViewDoubleAction: (id) sender {

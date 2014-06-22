@@ -29,4 +29,6 @@
 
 -(void) showAll;
 
+-(void) invalidate;
+
 @end

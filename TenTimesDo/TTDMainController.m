@@ -43,6 +43,7 @@
 }
 
 - (void)showTaskList {
+    [[self taskListController] invalidate];
     [[self mainView] setContentView: self.taskListController.view];
 }
 
@@ -67,8 +68,9 @@
     TTDIssue *selectedIssue = [[self taskListController] selectedIssue];
     if(selectedIssue) {
         [selectedIssue markAsDone];
+        [self saveChanges];
+        [[self taskListController] invalidate];
     }
-    [self saveChanges];
 }
 
 #pragma mark - ManagedObjectContext
