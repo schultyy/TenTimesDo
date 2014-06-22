@@ -8,6 +8,7 @@
 @class TTDTaskListViewController;
 @class TTDTaskEditorViewController;
 @class TTDProjectEditorViewController;
+@class TTDProjectListViewController;
 
 
 @interface TTDMainController : NSWindowController
@@ -16,9 +17,13 @@
 
 @property (retain) TTDTaskEditorViewController *taskEditorController;
 
+@property (retain) TTDProjectListViewController *projectListController;
+
 @property (retain) TTDProjectEditorViewController *projectEditorController;
 
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+
+@property IBOutlet NSBox *listView;
 
 @property IBOutlet NSBox *mainView;
 

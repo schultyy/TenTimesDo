@@ -6,6 +6,7 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="TTDMainController">
             <connections>
+                <outlet property="listView" destination="aVu-kI-bWC" id="l5h-IW-pZJ"/>
                 <outlet property="mainView" destination="zGv-tS-Dqm" id="8RE-qT-FJ8"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="JTL-TO-BSs"/>
             </connections>
@@ -23,21 +24,37 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <box autoresizesSubviews="NO" title="Box" borderType="none" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="zGv-tS-Dqm">
-                        <rect key="frame" x="-3" y="-4" width="811" height="534"/>
+                        <rect key="frame" x="189" y="-4" width="619" height="534"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <view key="contentView">
-                            <rect key="frame" x="0.0" y="0.0" width="811" height="534"/>
+                            <rect key="frame" x="0.0" y="0.0" width="619" height="534"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         </view>
                         <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
                         <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </box>
+                    <box autoresizesSubviews="NO" title="Box" borderType="none" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="aVu-kI-bWC">
+                        <rect key="frame" x="-3" y="-4" width="190" height="534"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <view key="contentView">
+                            <rect key="frame" x="0.0" y="0.0" width="190" height="534"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        </view>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="184" id="BXC-8j-bXs"/>
+                        </constraints>
+                        <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                        <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </box>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottom" secondItem="zGv-tS-Dqm" secondAttribute="bottom" id="0zN-6S-Utn"/>
-                    <constraint firstItem="zGv-tS-Dqm" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" id="CX9-b9-Fzb"/>
-                    <constraint firstAttribute="trailing" secondItem="zGv-tS-Dqm" secondAttribute="trailing" id="Tmq-TP-j5T"/>
-                    <constraint firstItem="zGv-tS-Dqm" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" id="yMZ-et-W1h"/>
+                    <constraint firstItem="aVu-kI-bWC" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" id="Gmx-eR-sSh"/>
+                    <constraint firstItem="zGv-tS-Dqm" firstAttribute="leading" secondItem="aVu-kI-bWC" secondAttribute="trailing" constant="8" id="bSF-bO-eou"/>
+                    <constraint firstAttribute="bottom" secondItem="aVu-kI-bWC" secondAttribute="bottom" id="euj-DD-CfZ"/>
+                    <constraint firstItem="aVu-kI-bWC" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" id="fmP-Gf-5Wb"/>
+                    <constraint firstAttribute="trailing" secondItem="zGv-tS-Dqm" secondAttribute="trailing" id="kbc-Tj-FzF"/>
+                    <constraint firstItem="zGv-tS-Dqm" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" id="vwt-hY-pYa"/>
+                    <constraint firstAttribute="bottom" secondItem="zGv-tS-Dqm" secondAttribute="bottom" id="zGM-jV-in3"/>
                 </constraints>
             </view>
         </window>

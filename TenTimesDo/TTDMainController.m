@@ -12,6 +12,7 @@
 #import "Underscore.h"
 #import "TTDProjectEditorViewController.h"
 #import "TTDProjectEditorDelegate.h"
+#import "TTDProjectListViewController.h"
 
 
 @interface TTDMainController()<TTDTaskEditorDelegate, TTDTaskListDelegate, TTDProjectEditorDelegate>
@@ -24,6 +25,7 @@
     if(self){
         [self setManagedObjectContext: context];
         [self setTaskListController:[[TTDTaskListViewController alloc] initWitHManagedObjectContext:self.managedObjectContext]];
+        [self setProjectListController:[[TTDProjectListViewController alloc] initWitHManagedObjectContext:self.managedObjectContext]];
         [self setTaskEditorController:[[TTDTaskEditorViewController alloc] init]];
         [self setProjectEditorController:[[TTDProjectEditorViewController alloc] init]];
 
@@ -39,7 +41,12 @@
 }
 
 -(void)awakeFromNib {
+    [self showProjectlist];
     [self showTaskList];
+}
+
+- (void) showProjectlist {
+    [[self listView] setContentView:self.projectListController.view];
 }
 
 - (void) showTaskEditor {
